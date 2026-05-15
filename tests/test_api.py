@@ -48,7 +48,7 @@ class TestToggleSquare:
         response = client.post("/toggle/0")
         assert response.status_code == 200
         # The response should contain the game screen with a marked square
-        assert "FREE SPACE" in response.text
+        assert "ESPAÇO LIVRE" in response.text
 
 
 class TestResetGame:
